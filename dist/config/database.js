@@ -30,11 +30,11 @@ exports.default = ({ env }) => {
         },
         postgres: {
             connection: {
-                host: env("DATABASE_HOST", "localhost"), // Deve ser "localhost"
+                host: env("DATABASE_HOST", "ep-small-shadow-a4n58zvd.us-east-1.aws.neon.tech"),
                 port: env.int("DATABASE_PORT", 5432),
-                database: env("DATABASE_NAME", "strapi_db"),
-                user: env("DATABASE_USERNAME", "strapi"),
-                password: env("DATABASE_PASSWORD", "strapi_password"),
+                database: env("DATABASE_NAME", "verceldb"),
+                user: env("DATABASE_USERNAME", "default"),
+                password: env("DATABASE_PASSWORD", "v59dAnJkYCPl"),
                 ssl: env.bool("DATABASE_SSL", false) && {
                     key: env("DATABASE_SSL_KEY", undefined),
                     cert: env("DATABASE_SSL_CERT", undefined),
