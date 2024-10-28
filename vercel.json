@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
+    }
+  ],
+  "env": {
+    "DATABASE_CLIENT": "postgres",
+    "DATABASE_HOST": "ep-small-shadow-a4n58zvd.us-east-1.aws.neon.tech",
+    "DATABASE_PORT": "5432",
+    "DATABASE_NAME": "verceldb",
+    "DATABASE_USERNAME": "default",
+    "DATABASE_PASSWORD": "v59dAnJkYCPl",
+    "DATABASE_SSL": "true",
+    "JWT_SECRET": "IfSQjn9oi4+UX39w+xXYSA=="
+  }
+}
